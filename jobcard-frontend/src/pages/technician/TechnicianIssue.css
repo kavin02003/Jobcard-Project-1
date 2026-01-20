@@ -1,0 +1,113 @@
+/* Page background */
+body {
+  background-color: #f4f6f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container */
+.tech-issues-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+/* Page title */
+.tech-issues-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Issue card */
+.issue-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #ff9800;
+}
+
+/* Status */
+.issue-status {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1976d2;
+}
+
+/* Textarea */
+.issue-card textarea {
+  width: 100%;
+  min-height: 70px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.issue-card textarea:focus {
+  border-color: #ff9800;
+}
+
+/* Button */
+.issue-card button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #ff9800;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.issue-card button:hover {
+  background-color: #e68900;
+}
+
+/* Divider */
+.issue-card hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Updates title */
+.issue-card h4 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Update rows */
+.issue-update {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.issue-update small {
+  color: #888;
+  font-size: 12px;
+}
+
+/* Critical vs info */
+.issue-update.critical {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+.issue-update.info {
+  color: #1976d2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tech-issues-container {
+    width: 95%;
+  }
+}

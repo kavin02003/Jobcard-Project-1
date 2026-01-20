@@ -1,0 +1,142 @@
+Page background
+body {
+  background-color: #f4f6f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container */
+.billing-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+/* Page title */
+.billing-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Job billing card */
+.billing-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Job info */
+.billing-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Parts row */
+.parts-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+.billing-card input {
+  flex: 1;
+  padding: 9px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.billing-card input:focus {
+  border-color: #1976d2;
+}
+
+.billing-card input[type="number"] {
+  max-width: 90px;
+}
+
+/* Add part button */
+.add-part-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #eeeeee;
+  border: 1px dashed #aaa;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-part-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Generate bill button */
+.generate-btn {
+  margin-top: 12px;
+  padding: 10px 18px;
+  background-color: #1976d2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.generate-btn:hover {
+  background-color: #125aa3;
+}
+
+/* Bill generated */
+.bill-success {
+  margin-top: 10px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+/* Bill details */
+.bill-details {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+.bill-details h4 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.bill-details p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+/* Total highlight */
+.bill-total {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .billing-container {
+    width: 95%;
+  }
+
+  .parts-row {
+    flex-direction: column;
+  }
+
+  .billing-card input[type="number"] {
+    max-width: 100%;
+  }
+}

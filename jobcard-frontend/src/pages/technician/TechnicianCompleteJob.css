@@ -1,0 +1,110 @@
+/* Page background */
+body {
+  background-color: #f4f6f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container */
+.tech-complete-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+/* Page title */
+.tech-complete-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Job card */
+.complete-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Basic info */
+.complete-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Status */
+.job-status {
+  font-weight: 600;
+  color: #1976d2;
+}
+
+/* Inputs */
+.complete-card input,
+.complete-card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.complete-card input:focus,
+.complete-card textarea:focus {
+  border-color: #1976d2;
+}
+
+.complete-card textarea {
+  resize: none;
+  min-height: 70px;
+}
+
+/* Action button */
+.complete-card button {
+  margin-top: 12px;
+  padding: 10px 18px;
+  background-color: #2e7d32;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.complete-card button:hover {
+  background-color: #1b5e20;
+}
+
+/* Completed section */
+.completed-summary {
+  margin-top: 12px;
+  padding: 14px;
+  background-color: #e8f5e9;
+  border-radius: 6px;
+  border-left: 4px solid #2e7d32;
+}
+
+.completed-summary p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* Success text */
+.completed-title {
+  font-weight: 700;
+  color: #2e7d32;
+  margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tech-complete-container {
+    width: 95%;
+  }
+}

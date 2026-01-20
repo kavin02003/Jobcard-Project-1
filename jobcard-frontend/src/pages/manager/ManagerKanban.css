@@ -1,0 +1,133 @@
+/* Page background */
+body {
+  background-color: #f4f6f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Kanban board container */
+.kanban-board {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+/* Status column */
+.kanban-column {
+  min-width: 260px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Column header */
+.kanban-header {
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f1f3f5;
+  border-radius: 8px 8px 0 0;
+  color: #333;
+}
+
+/* Empty state */
+.kanban-empty {
+  text-align: center;
+  color: #999;
+  padding: 12px;
+  font-size: 13px;
+}
+
+/* Job card */
+.kanban-card {
+  background-color: #fafafa;
+  margin: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  font-size: 13px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kanban-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Card content */
+.kanban-card p {
+  margin: 4px 0;
+  color: #444;
+}
+
+/* Technician text */
+.kanban-tech {
+  font-weight: 600;
+  color: #1976d2;
+}
+
+.kanban-unassigned {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+/* Status color indicators */
+.kanban-column.CREATED .kanban-header {
+  background-color: #e3f2fd;
+}
+
+.kanban-column.IN_PROGRESS .kanban-header {
+  background-color: #fff3e0;
+}
+
+.kanban-column.ISSUE_REPORTED .kanban-header {
+  background-color: #ffebee;
+}
+
+.kanban-column.DONE .kanban-header {
+  background-color: #e8f5e9;
+}
+
+.kanban-column.BILLED .kanban-header {
+  background-color: #ede7f6;
+}
+
+.kanban-column.DELIVERED .kanban-header {
+  background-color: #e0f7fa;
+}
+
+/* Scrollbar styling */
+.kanban-board::-webkit-scrollbar {
+  height: 8px;
+}
+
+.kanban-board::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 4px;
+}
+
+.deliver-btn {
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deliver-btn:hover {
+  background: darkgreen;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .kanban-column {
+    min-width: 220px;
+  }
+}
